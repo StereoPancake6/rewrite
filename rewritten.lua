@@ -1,12 +1,11 @@
-
 repeat
     wait()
 until game:IsLoaded()
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xwel33/hud/main/gui"))() --you can go into the github link and copy all of it and modify it for yourself.
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/xwel33/hud/main/Notification"))()
-Library.theme.accentcolor = Color3.fromRGB(0, 204, 255)
-local Window3 = Library:CreateWindow("Choobian ", Vector2.new(600, 400))
+Library.theme.accentcolor = Color3.fromRGB(123, 226, 252)
+local Window3 = Library:CreateWindow("Choobian  ♠", Vector2.new(600, 400))
 
 local GetService =
     setmetatable(
@@ -75,6 +74,11 @@ loadscreen33:AddToggle(
         locksectionenabled = Boolean
     end
 )
+ --Choobian 
+
+local SettingsTab4 = loadscreen2:CreateSector("Choobian", "right")
+
+
 
 local loadscreen3 = loadscreen2:CreateSector("Settings", "left")
 
@@ -97,7 +101,7 @@ loadscreen3:AddDropdown(
         anticheatbypass = Value
     end
 )
-  
+ --Choobian 
 
 local developermode = "True"
 loadscreen3:AddDropdown(
@@ -130,12 +134,12 @@ loadscreen3:AddDropdown(
         versionthing = Value
     end
 )
- 
+--Choobian 
 loadscreen3:AddButton(
     "Execute",
     function()
         if checkifexecuted == true then
-            NotifyLib.prompt("Choobian ", "Already Executed!", 0)
+            NotifyLib.prompt("Choobian  ♠", "Already Executed!", 0)
             return
         end
         if checkifanticheat == false then
@@ -176,7 +180,7 @@ loadscreen3:AddButton(
                             return old(self, ...)
                         end
                     )
-                    NotifyLib.prompt("Choobian ", "Bypassed Anti Cheat! (Da hood Bypass Version)", 0)
+                    NotifyLib.prompt("Choobian  ♠", "Bypassed Anti Cheat! (Da hood Bypass Version)", 0)
                 end
 
                 if checkifanticheat == false then
@@ -209,7 +213,7 @@ loadscreen3:AddButton(
                                     game.ReplicatedStorage.MainEvent:FireServer("TeleportDetect")
                                 end
                             )
-                            NotifyLib.prompt("Choobian ", "Bypassed Anti Cheat! SEMI (Hood Modded Bypass Version)", 0)
+                            NotifyLib.prompt("Choobian  ♠", "Bypassed Anti Cheat! SEMI (Hood Modded Bypass Version)", 0)
                         end
                     end
                 end
@@ -238,12 +242,12 @@ loadscreen3:AddButton(
                         end
                     )
 
-                    NotifyLib.prompt("Choobian ", "Bypassed Anti Cheat! (Untilted hood Bypass Version)", 0)
+                    NotifyLib.prompt("Choobian  ♠", "Bypassed Anti Cheat! (Untilted hood Bypass Version)", 0)
                 end
             end
         end
 
-        if versionthing == "Private" then  
+        if versionthing == "Private" then --Choobian 
             function Remove(Data, Data2)
                 for i, v in pairs(Data) do
                     if v == Data2 then
@@ -319,7 +323,7 @@ loadscreen3:AddButton(
             end
 
             --Target aim DrawingFunctions
-             
+            --Choobian 
             --orbit
             local Yung =
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/xwel33/meffsol-remake/main/orbit"))() -- This is not mine
@@ -391,7 +395,7 @@ loadscreen3:AddButton(
                     partcolour = Color3.fromRGB(255, 255, 255),
                     circlecolour = Color3.fromRGB(255, 255, 255)
                 },
-                  
+                 --Choobian 
                 fov = {
                     enabled = false,
                     filled = false,
@@ -421,7 +425,7 @@ loadscreen3:AddButton(
             getgenv().EnableGripHeight = 10
             getgenv().AntiAntiBag = false
 
-             
+            --Choobian 
             local cframetpdesync = false
 
             local cframetpdesynctype = "Random"
@@ -450,7 +454,7 @@ loadscreen3:AddButton(
              -- i stole this
             local r6_dummy = game:GetObjects("rbxassetid://9474737816")[1]
             r6_dummy.Head.Face:Destroy()
-             
+            --Choobian 
             for i, v in pairs(r6_dummy:GetChildren()) do
                 v.Transparency = v.Name == "HumanoidRootPart" and 1 or 0.70
                 v.Material = "Neon"
@@ -564,7 +568,7 @@ loadscreen3:AddButton(
                         else
                             r6_dummy.Parent = nil
                         end
-                          
+                         --Choobian 
 
                         lplr.Character.HumanoidRootPart.CFrame = fakeCFrame
 
@@ -657,7 +661,7 @@ loadscreen3:AddButton(
                     gui.Parent = CoreGui
                 end
             end
-             
+            --Choobian 
             local MainGui = Instance.new("ScreenGui")
             MainGui.Name = "VaultsUI"
             MainGui.Parent = CoreGui
@@ -865,7 +869,7 @@ loadscreen3:AddButton(
             ArmorIcon.Image = "rbxassetid://3926307971"
             ArmorIcon.ImageRectOffset = Vector2.new(164, 284)
             ArmorIcon.ImageRectSize = Vector2.new(36, 36)
-             
+            --Choobian 
             UmbraShadow_2.Name = "UmbraShadow"
             UmbraShadow_2.Parent = TargetUI
             UmbraShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -894,10 +898,10 @@ loadscreen3:AddButton(
             AmbientShadow_2.ScaleType = Enum.ScaleType.Slice
             AmbientShadow_2.SliceCenter = Rect.new(10, 10, 118, 118)
 
-             
+            --Choobian 
             Library.theme.accentcolor = Color3.fromRGB(0, 204, 255)
             local watermark = Library:CreateWatermark("Choobian  | v2.19 | {fps} | {game} ")
-            local Window = Library:CreateWindow("Choobian ", Vector2.new(700, 900), Enum.KeyCode.RightControl)
+            local Window = Library:CreateWindow("Choobian  ♠", Vector2.new(700, 900), Enum.KeyCode.RightControl)
 
             local meffsettings = {
                 Blatant = {
@@ -1074,7 +1078,7 @@ loadscreen3:AddButton(
                         getgenv().nigger = Boolean
                     end
                 )
-                  
+                 --Choobian 
                 local triggerdelay =
                     triggerbotsection:AddToggle(
                     "Delay",
@@ -1114,7 +1118,7 @@ loadscreen3:AddButton(
                         getgenv().timer = Value
                     end
                 )
-                 
+                --Choobian 
 
                 local lock6 = Anti:CreateSector("Camera Aimbot", "left")
 
@@ -1145,7 +1149,7 @@ loadscreen3:AddButton(
                     FOV = false,
                     LINE = false
                 }
-                 
+                --Choobian 
 
                 local CurrentCamera = game:GetService("Workspace").CurrentCamera
                 local Inset = game:GetService("GuiService"):GetGuiInset().Y
@@ -1186,7 +1190,7 @@ loadscreen3:AddButton(
                 local Aimlock, MousePressed, CanNotify = false, false, false
                 local AimlockTarget, OldPre
 
-                 
+                --Choobian 
 
                 local Target, PartMode, Partz, NotifMode, PredictionF
 
@@ -1222,7 +1226,7 @@ loadscreen3:AddButton(
 
                     return plr1g2
                 end
-                  
+                 --Choobian 
 
                 mousef.KeyDown:Connect(
                     function(k)
@@ -1258,7 +1262,7 @@ loadscreen3:AddButton(
                                     benlocked.Playing = true
                                 end
                                 if getgenv().Notificationmode and getgenv().Notificationmodepart == "Meff" then
-                                    NotifyLib.prompt("Choobian ", "Locked: " .. AimlockTarget.DisplayName, 0)
+                                    NotifyLib.prompt("Choobian  ♠", "Locked: " .. AimlockTarget.DisplayName, 0)
                                 end
                             end
                         else
@@ -1290,14 +1294,14 @@ loadscreen3:AddButton(
                                     benlocked.Playing = true
                                 end
                                 if getgenv().Notificationmode and getgenv().Notificationmodepart == "Meff" then
-                                    NotifyLib.prompt("Choobian ", "Unlocked", 0)
+                                    NotifyLib.prompt("Choobian  ♠", "Unlocked", 0)
                                 end
                                 Line2.Visible = false
                             end
                         end
                     end
                 )
-                  
+                 --Choobian 
 
                 RService.RenderStepped:Connect(
                     function()
@@ -1339,7 +1343,7 @@ loadscreen3:AddButton(
                                     end
                                 end
                             end
-                              
+                             --Choobian 
                             if Aimlock == true and MousePressed == true then
                                 if AimlockTarget then
                                     if aiming.od.tpko == true and AimlockTarget.Character.Humanoid.health < 1 then
@@ -1427,7 +1431,7 @@ loadscreen3:AddButton(
                                 Line.Visible = false
                                 Circle.Visible = false
                             end
-                              
+                             --Choobian 
                             if Aimlock == true and MousePressed == true then
                                 if
                                     AimlockTarget and AimlockTarget.Character and
@@ -1630,7 +1634,7 @@ loadscreen3:AddButton(
                         end
                     end
                 )
-                  
+                 --Choobian 
 
                 local cameraanabled =
                     lock6:AddToggle(
@@ -1695,7 +1699,7 @@ loadscreen3:AddButton(
                         getgenv().Visual.FOV = Boolean
                     end
                 )
-                  
+                 --Choobian 
 
                 lock6:AddColorpicker(
                     "Visual Color",
@@ -1806,7 +1810,7 @@ loadscreen3:AddButton(
                         end
                     end
                 )
-                  
+                 --Choobian 
                 camvelres:AddKeybind()
 
                 local resolvertypev22 = "Nothing"
@@ -1911,7 +1915,7 @@ loadscreen3:AddButton(
                 circlev.Transparency = 0.6
                 circlev.Radius = 50
                 circlev.Visible = false
-                  
+                 --Choobian 
                 circlev.Filled = false
 
                 local circlev2 = Drawing.new("Circle")
@@ -1998,7 +2002,7 @@ loadscreen3:AddButton(
                                         aiming.targetaim.Notificationmode == true and
                                             aiming.targetaim.Notificationmodepart == "Meff"
                                      then
-                                        NotifyLib.prompt("Choobian ", "Locked: " .. tostring(targetplr), 0)
+                                        NotifyLib.prompt("Choobian  ♠", "Locked: " .. tostring(targetplr), 0)
                                     end
                                     if aiming.targetaim.toggablexd == false then
                                         aiming.targetaim.toggablexd = true
@@ -2189,7 +2193,7 @@ loadscreen3:AddButton(
                                             end
                                         )
                                     end
-                                      
+                                     --Choobian 
                                     if targetplr ~= nil and aiming.visualization.mode == "Cylinder" then
                                         local ipar7 = Instance.new("Part", game.Workspace)
                                         ipar7.Name = "uwu4"
@@ -2277,7 +2281,7 @@ loadscreen3:AddButton(
                                         aiming.targetaim.Notificationmode == true and
                                             aiming.targetaim.Notificationmodepart == "Meff"
                                      then
-                                        NotifyLib.prompt("Choobian ", "Unlocked", 0)
+                                        NotifyLib.prompt("Choobian  ♠", "Unlocked", 0)
                                     end
                                     if aiming.targetaim.toggablexd == true then
                                         aiming.targetaim.toggablexd = false
@@ -2393,7 +2397,7 @@ loadscreen3:AddButton(
                 legit1:AddTextbox(
                     "Prediction",
                     0.1229,
-                    function(Text)  
+                    function(Text) --Choobian 
                         aiming.targetaim.prediction = Text
                         aiming.targetaim.predictionv2 = Text
                     end
@@ -2422,7 +2426,7 @@ loadscreen3:AddButton(
                     },
                     "LowerTorso",
                     false,
-                    function(v)  
+                    function(v) --Choobian 
                         aiming.targetaim.hitpart = v
                         aiming.targetaim.hitpart2 = v
                     end
@@ -2470,7 +2474,7 @@ loadscreen3:AddButton(
                     function(v)
                         aiming.targetaim.autoprediction = v
                     end
-                  
+                 --Choobian 
                 )
 
                 local targetteleport =
@@ -2547,7 +2551,7 @@ loadscreen3:AddButton(
                     function(v)
                         aiming.targetaim.view = v
                     end
-                  
+                 --Choobian 
                 )
 
                 local viewopponent =
@@ -4324,10 +4328,10 @@ loadscreen3:AddButton(
                         velocitywalk = Boolean
 
                         if velocitywalk == true and notifyvel == true and Notificationstype2 == "Meff" then
-                            NotifyLib.prompt("Choobian ", "Enabled", 0.5)
+                            NotifyLib.prompt("Choobian  ♠", "Enabled", 0.5)
                         end
                         if velocitywalk == false and notifyvel == true and Notificationstype2 == "Meff" then
-                            NotifyLib.prompt("Choobian ", "Disabled", 0.5)
+                            NotifyLib.prompt("Choobian  ♠", "Disabled", 0.5)
                         end
                         if velocitywalk == true and notifyvel == true and Notificationstype2 == "Roblox" then
                             game.StarterGui:SetCore(
@@ -5208,7 +5212,7 @@ loadscreen3:AddButton(
                     "ez ez你被低级拍手哈哈！",
                     "你不能在这里利用！!111!!111它是非法的！!!!",
                     "你为什么要死于我，兄弟。",
-                    "被Choobian 用户鼓掌：骷髅：",
+                    "被Sanky Box用户鼓掌：骷髅：",
                     "兄弟被拍手笑",
                     "想象一下，你的父亲在哪里，然后去看看？",
                     "对不起，我的目标瞄准击中了你吗？ 如果是这样，那你就是垃圾！",
@@ -5229,18 +5233,18 @@ loadscreen3:AddButton(
                     "你应该回幼儿园去。",
                     "我只是比你好！!!!!",
                     "Choobian >你😱",
-                    "Choobian 拥有你！",
+                    "Choobian  Box拥有你！",
                     "别哭了，别哭了",
                     "那就把行动推到我身上！",
                     "马上去拿桑奇盒子，兄弟！!",
                     "让你的目标，并得到桑奇框",
                     "别抱怨了，拿个傻盒子！",
                     "Choobian >你的事业",
-                    "是的，Choobian 是最好的！",
-                    "Choobian 比你祖母有更多的功能！",
+                    "是的，Choobian  box是最好的！",
+                    "Choobian  Box比你祖母有更多的功能！",
                     "变得更好，伙计！",
                     "兄弟只要拿到傻盒子哈哈",
-                    "哟12岁得到Choobian ！"
+                    "哟12岁得到sanky box！"
                 }
 
                 getgenv().wordsV4 = {
@@ -5295,7 +5299,7 @@ loadscreen3:AddButton(
                 Trashtalkable:AddToggle(
                     "Enable",
                     false,
-                    function(Boolean)  
+                    function(Boolean) --Choobian 
                         _G.EnableTrashTalk = Boolean
                         if _G.EnableTrashTalk == true then
                             keybindfunctional =
@@ -5307,7 +5311,7 @@ loadscreen3:AddButton(
                                                 words[math.random(#getgenv().words)],
                                                 "All"
                                             )
-                                        elseif getgenv().Customtypertype == "Choobian Box" then
+                                        elseif getgenv().Customtypertype == "SankyBox" then
                                             game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
                                                 wordsV2[math.random(#getgenv().wordsV2)],
                                                 "All"
@@ -5363,7 +5367,7 @@ loadscreen3:AddButton(
                                         words[math.random(#getgenv().words)],
                                         "All"
                                     )
-                                elseif getgenv().Customtypertype == "Choobian Box" then
+                                elseif getgenv().Customtypertype == "SankyBox" then
                                     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
                                         wordsV2[math.random(#getgenv().wordsV2)],
                                         "All"
@@ -5403,7 +5407,7 @@ loadscreen3:AddButton(
                 Trashtalkable:AddLabel("-Type Ver-")
                 Trashtalkable:AddDropdown(
                     "Type",
-                    {"TrashTalk", "Choobian Box", "Chinease", "Russian", "Custom"},
+                    {"TrashTalk", "SankyBox", "Chinease", "Russian", "Custom"},
                     "TrashTalk",
                     false,
                     function(Value)
@@ -5436,7 +5440,7 @@ loadscreen3:AddButton(
                 Trashtalkable:AddButton(
                     "Remove Text",
                     function()
-                         
+                        --Choobian 
                         if table.find(getgenv().customword, getgenv().Holder) then
                             Remove(getgenv().customword, getgenv().Holder)
                             game.StarterGui:SetCore(
@@ -5566,7 +5570,7 @@ loadscreen3:AddButton(
                         _G.AlertType = "Kick"
                     end
                 )
-                  
+                 --Choobian 
 
                 local godemodesfunctions = Misc3:CreateSector("Character Functions", "right")
 
@@ -5604,7 +5608,7 @@ loadscreen3:AddButton(
                         Clone1.Parent = game:GetService("Players").LocalPlayer.Character.BodyEffects
                     end
                 )
-                  
+                 --Choobian 
                 godemodesfunctions:AddLabel("-Semi-")
                 godemodesfunctions:AddToggle(
                     "Hide Block",
@@ -5674,7 +5678,7 @@ loadscreen3:AddButton(
                         end
                     end
                 )
-                 
+                --Choobian 
                 godemodesfunctions:AddToggle(
                     "Auto Block",
                     false,
@@ -5815,7 +5819,7 @@ loadscreen3:AddButton(
                 fard5v2:AddToggle(
                     "Enable",
                     false,
-                    function(Callback)  
+                    function(Callback) --Choobian 
                         if Callback then
                             getgenv().AntiStomprunservice =
                                 game:GetService("RunService").Stepped:Connect(
@@ -5924,7 +5928,7 @@ loadscreen3:AddButton(
                 fard5:AddButton(
                     "No Recoil",
                     function()
-                         
+                        --Choobian 
                         function isframework(scriptInstance)
                             if tostring(scriptInstance) == "Framework" then
                                 return true
@@ -5953,7 +5957,7 @@ loadscreen3:AddButton(
                                 return newindex(self, index, value)
                             end
                         )
-                        NotifyLib.prompt("Choobian ", "Succes!", 3)
+                        NotifyLib.prompt("Choobian  ♠", "Succes!", 3)
                     end
                 )
 
@@ -5974,7 +5978,7 @@ loadscreen3:AddButton(
                 fard5:AddButton(
                     "Tornado",
                     function()
-                         
+                        --Choobian 
                         game.Players.LocalPlayer.Character.Humanoid.Changed:connect(
                             function()
                                 game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(
@@ -6198,7 +6202,7 @@ loadscreen3:AddButton(
                                     bodee.D = 9e9
                                     bodee.P = 10000
                                     bodee.Position = Core.Position
-                                      
+                                     --Choobian 
 
                                     local pos = Instance.new("BodyPosition", torso)
                                     local gyro = Instance.new("BodyGyro", torso)
@@ -6255,7 +6259,7 @@ loadscreen3:AddButton(
                                     if bodey then
                                         bodey:Destroy()
                                     end
-                                      
+                                     --Choobian 
                                     if bodee then
                                         bodee:Destroy()
                                     end
@@ -6312,7 +6316,7 @@ loadscreen3:AddButton(
                             end
                         )
                         boop()
-                          
+                         --Choobian 
                         local chars = game.Players.LocalPlayer.Character
                         game:GetService("RunService").Stepped:connect(
                             function()
@@ -6368,7 +6372,7 @@ loadscreen3:AddButton(
                             local t = w.Terrain
                             t.WaterWaveSize = 0
                             t.WaterWaveSpeed = 0
-                              
+                             --Choobian 
                             t.WaterReflectance = 0
                             t.WaterTransparency = 0
                             l.GlobalShadows = false
@@ -6413,11 +6417,11 @@ loadscreen3:AddButton(
                     function()
                         local nobulletdelay = game:GetService("CorePackages").Packages
                         nobulletdelay:Destroy()
-                        NotifyLib.prompt("Choobian ", "Succes!", 3)
+                        NotifyLib.prompt("Choobian  ♠", "Succes!", 3)
                     end
                 )
 
-                 
+                --Choobian 
 
                 fard5:AddButton(
                     "chat spy",
@@ -6481,7 +6485,7 @@ loadscreen3:AddButton(
                                     )
                                     wait(1)
                                     conn:Disconnect()
-                                      
+                                     --Choobian 
                                     if hidden and enabledmeff then
                                         if public then
                                             saymsg:FireServer(
@@ -6535,7 +6539,7 @@ loadscreen3:AddButton(
                     {"None", "RightLeg", "LeftLeg", "LeftArm", "RightArm"},
                     "None",
                     false,
-                    function(Value)  
+                    function(Value) --Choobian 
                         removehitboxpart = Value
                         if removehitboxpart == "None" then
                         elseif removehitboxpart == "RightLeg" then
@@ -6576,7 +6580,7 @@ loadscreen3:AddButton(
                         end
                     end
                 )
-                 
+                --Choobian 
                 local noammoid = "rbxassetid://9125915045"
 
                 Visuals8:AddTextbox(
@@ -6617,7 +6621,7 @@ loadscreen3:AddButton(
                 SpeedToggle:AddKeybind()
                 local movmentspeed2 =
                     SpeedToggle:AddSlider(
-                      
+                     --Choobian 
                     1,
                     5,
                     100,
@@ -6661,7 +6665,7 @@ loadscreen3:AddButton(
                 )
 
                 antibind:AddKeybind()
-                  
+                 --Choobian 
                 local jumpableno =
                     fard:AddToggle(
                     "no jump cooldown",
@@ -6722,7 +6726,7 @@ loadscreen3:AddButton(
                         _G.InvisibleMask = Boolean
                     end
                 )
-                 
+                --Choobian 
                 game.Players.LocalPlayer.Character.DescendantAdded:Connect(
                     function(Desc)
                         if Desc.Name == "ShootBBGUI" and _G.FreezeBullets == true then
@@ -6872,7 +6876,7 @@ loadscreen3:AddButton(
                 fard:AddToggle(
                     "Anti Afk",
                     false,
-                    function(Boolean)  
+                    function(Boolean) --Choobian 
                         antiafk = Boolean
                         if antiafk then
                             local vu = game:GetService("VirtualUser")
@@ -6909,7 +6913,7 @@ loadscreen3:AddButton(
                 local antibaggable =
                     fard:AddToggle(
                     "Anti Bag",
-                      
+                     --Choobian 
                     false,
                     function(Boolean)
                         getgenv().AntiAntiBag = Boolean
@@ -8734,7 +8738,7 @@ loadscreen3:AddButton(
                             chr.RightFoot.Transparency = "0"
                         end
                     end
-                  
+                 --Choobian 
                 )
 
                 getgenv().beastmode = false
@@ -8817,7 +8821,7 @@ loadscreen3:AddButton(
                     end
                 )
 
-                 
+                --Choobian 
                 local Visuals7 = Misc:CreateSector("Image Changer", "left")
                 Visuals7:AddDropdown(
                     "Damage Indicator",
@@ -8851,7 +8855,7 @@ loadscreen3:AddButton(
                     {"Normal", "Wakeup", "Peter", "Jumpscare", "Blood", "Meff", "Blank", "Bullet2"},
                     "Normal",
                     false,
-                    function(Value)  
+                    function(Value) --Choobian 
                         chingchong3322 = Value
                         if chingchong3322 == "Wakeup" then
                             game.ReplicatedStorage.AmmoG.Image = "http://www.roblox.com/asset/?id=6210809637"
@@ -8945,7 +8949,7 @@ loadscreen3:AddButton(
                                         false
                                 end
                             )
-                        else  
+                        else --Choobian 
                             if Topcursor then
                                 Topcursor:Disconnect()
                             end
@@ -8998,7 +9002,7 @@ loadscreen3:AddButton(
                         end
                     end
                 )
-                 
+                --Choobian 
                 cursor2:AddToggle(
                     "Left",
                     false,
@@ -9052,7 +9056,7 @@ loadscreen3:AddButton(
                     0,
                     5,
                     10,
-                      
+                     --Choobian 
                     10,
                     function(Value)
                         getgenv().rotationspeed = Value
@@ -9169,7 +9173,7 @@ loadscreen3:AddButton(
                         newFramex.Size = UDim2.new(1, 0, 1, 0)
                         newFramex.BackgroundTransparency = 0
                         newUiCornorx.CornerRadius = UDim.new(50, 50)
-                      
+                     --Choobian 
                     end
                 )
 
@@ -9260,7 +9264,7 @@ loadscreen3:AddButton(
                             end
                             local humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
 
-                            if humanoid.RigType == Enum.HumanoidRigType.R15 then  
+                            if humanoid.RigType == Enum.HumanoidRigType.R15 then --Choobian 
                                 game.Players.LocalPlayer.Character.LeftHand.Material = "Plastic"
                                 game.Players.LocalPlayer.Character.RightHand.Material = "Plastic"
                                 game.Players.LocalPlayer.Character.LeftLowerArm.Material = "Plastic"
@@ -9363,7 +9367,7 @@ loadscreen3:AddButton(
                                         LocalPlayer.Character.RightUpperLeg.Color = Color3.fromHSV(tick() % 5 / 5, 1, 1)
                                         LocalPlayer.Character.Head.Color = Color3.fromHSV(tick() % 5 / 5, 1, 1)
                                     end
-                                  
+                                 --Choobian 
                                 end
                             )
                         else
@@ -9446,7 +9450,7 @@ loadscreen3:AddButton(
                         end
                     end
                 )
-                 
+                --Choobian 
                 local niggacum = false
                 local niggacumcolorxe = Color3.fromRGB(255, 0, 0)
                 local niggaculor = Color3.fromRGB(255, 0, 0)
@@ -9534,7 +9538,7 @@ loadscreen3:AddButton(
                     Visuals757:AddToggle(
                     "Enable",
                     false,
-                    function(Boolean)  
+                    function(Boolean) --Choobian 
                         _G.toggletrail = Boolean
                     end
                 )
@@ -9632,7 +9636,7 @@ loadscreen3:AddButton(
 
                 settings = {
                     enabled = false, -- / true / false
-                    minCameraDistance = 1, -- / any number 
+                    minCameraDistance = 1, -- / any number--Choobian 
                     hatTransparency = .35, -- / 0 - 1 (0 being invisible)
                     circleTransparency = 1, -- / 0 - 1 (0 being invisible)
                     height = .75, -- / any number
@@ -9731,7 +9735,7 @@ loadscreen3:AddButton(
                     0.75,
                     2,
                     20,
-                      
+                     --Choobian 
                     function(Value)
                         settings.height = Value
                     end
@@ -9834,7 +9838,7 @@ loadscreen3:AddButton(
                     function(Color)
                         getgenv().selfchamfollowingcolor = Color
                     end
-                  
+                 --Choobian 
                 )
 
                 Visuals4:AddDropdown(
@@ -9922,7 +9926,7 @@ loadscreen3:AddButton(
                 if workspace.Ignored.Shop:FindFirstChild(Target) and Alive(LocalPlayer) then
                     meffModule.Old.CFrame = LocalPlayer.Character.HumanoidRootPart.CFrame
                     wait(0.05)
-                      
+                     --Choobian 
                     LocalPlayer.Character.HumanoidRootPart.CFrame =
                         Workspace.Ignored.Shop[Target].Head.CFrame * CFrame.new(0, 3, 0)
                     wait(0.15)
@@ -10033,7 +10037,7 @@ loadscreen3:AddButton(
                             end
                         end
                     end
-                  
+                 --Choobian 
                 end
             )
             RunService.RenderStepped:Connect(
@@ -10137,7 +10141,7 @@ loadscreen3:AddButton(
                                         if LocalPlayer.Backpack:FindFirstChild("[Weights]") then
                                             LocalPlayer.Character.Humanoid:EquipTool(LocalPlayer.Backpack["[Weights]"])
                                         end
-
+                                         --Choobian 
                                         LocalPlayer.Character["[Weights]"]:Activate()
                                     end
                                     if meffsettings.Blatant.Farming.MuscleFarmingType == "Heavy" then
@@ -10235,7 +10239,7 @@ loadscreen3:AddButton(
                             )
                             mouse1click()
                         end
-
+                         --Choobian 
                         if getgenv().freezevel == true then
                             local Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
                             while getgenv().freezevel == true do
@@ -10336,7 +10340,7 @@ loadscreen3:AddButton(
                 }
                 local Other = {
                     Camera = workspace.CurrentCamera,
-
+                     --Choobian 
                     BeamPart = Instance.new("Part", workspace)
                 }
 
@@ -10391,6 +10395,7 @@ loadscreen3:AddButton(
                     local Beam = Instance.new("Beam", Part)
                     Beam.FaceCamera = true
                     Beam.Color = colorSequence
+                     --Choobian 
                     Beam.Attachment0 = Attachment
                     Beam.Attachment1 = Attachment2
                     Beam.LightEmission = 6
@@ -10465,12 +10470,15 @@ loadscreen3:AddButton(
             if is_synapse_function then
                 SettingsTab:CreateConfigSystem("left")
             else
-                NotifyLib.prompt("Choobian ", "Your Executor Doesnt Support Config.", 3)
+                NotifyLib.prompt("Choobian  ♠", "Your Executor Doesnt Support Config.", 3)
             end
 
-            local SettingsTab23 = SettingsTab:CreateSector("Credits", "right")
+            local SettingsTab23 = SettingsTab:CreateSector("Choobian", "right")
 
-            SettingsTab23:AddLabel("ur cute")
+            SettingsTab23:AddLabel(" ")
+            SettingsTab23:AddLabel(" ")
+            SettingsTab23:AddLabel(" ")
+            SettingsTab23:AddLabel("Choobian  2022 All Rights Reserved")
 
             local SettingsTab2 = SettingsTab:CreateSector("Menu", "right")
             local watermarksorry =
@@ -10481,5 +10489,20 @@ loadscreen3:AddButton(
                     watermark.Visible = Boolean
                 end
             )
-end
-end)
+
+            local SettingsTab = SettingsTab:CreateSector("Choobian", "right")
+
+
+            NotifyLib.prompt("Choobian  ♠", "Successfully Loaded Script!", 3)
+        end
+    end
+)
+
+local loadscreen333 = loadscreen2:CreateSector("Credits", "right")
+
+loadscreen333:AddLabel("")
+loadscreen333:AddLabel("")
+loadscreen333:AddLabel("")
+loadscreen333:AddLabel("Choobian  2022 All Rights Reserved")
+
+-- FUCK DA HOOD Choobian 
