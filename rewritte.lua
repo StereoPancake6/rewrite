@@ -10501,31 +10501,5 @@ loadscreen3:AddButton(
                     watermark.Visible = Boolean
                 end
             )
-
-            local SettingsTab = SettingsTab:CreateSector("Discord/website", "right")
-
-            local discord =
-                SettingsTab:AddButton(
-                "Join Discord",
-                function(bool)
-                    loadstring(
-                        game:HttpGet("https://raw.githubusercontent.com/xwel33/meffsol-remake/main/discord%20join")
-                    )()
-                end
-            )
-
-            local fortnite =
-                SettingsTab:AddButton(
-                "website link",
-                function(bool)
-                    setclipboard("https://speeds.solutions/")
-                    NotifyLib.prompt("Choobian ", "Successfully copied to clipboard", 3)
-                end
-            )
-            NotifyLib.prompt("Choobian ", "Successfully Loaded Script!", 3)
-        end
-    end
-)
-
-
-
+end
+end)
