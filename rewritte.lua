@@ -75,26 +75,6 @@ loadscreen33:AddToggle(
         locksectionenabled = Boolean
     end
 )
-  
-
-local SettingsTab4 = loadscreen2:CreateSector("Discord/website", "right")
-
-local discord =
-    SettingsTab4:AddButton(
-    "Join Discord",
-    function(bool)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/xwel33/meffsol-remake/main/discord%20join"))()
-    end
-)
-
-local fortnite =
-    SettingsTab4:AddButton(
-    "website link",
-    function(bool)
-        setclipboard("https://speeds.solutions/")
-        NotifyLib.prompt("Choobian ", "Successfully copied to clipboard", 3)
-    end
-)
 
 local loadscreen3 = loadscreen2:CreateSector("Settings", "left")
 
